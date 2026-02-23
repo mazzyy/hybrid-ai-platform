@@ -1,0 +1,11 @@
+material_id,description,material_type,unit,classification,weight,weight_unit,stock_qty,plant,last_updated
+CB-2410-F1,Thermal Circuit Breaker 10A 24V Fast-Trip,FERT,PC,ELEC-CB,12.5,g,1247,1000,2025-12-01
+CB-2410-S1,Thermal Circuit Breaker 10A 24V Slow-Trip,FERT,PC,ELEC-CB,12.5,g,834,1000,2025-12-01
+CB-2410-M1,Thermal Circuit Breaker 10A 24V Marine,FERT,PC,ELEC-CB,13.2,g,156,1000,2025-12-01
+CB-5020-F1,Thermal Circuit Breaker 20A 50V Fast-Trip,FERT,PC,ELEC-CB,18.7,g,562,1000,2025-12-01
+CB-5020-S1,Thermal Circuit Breaker 20A 50V Slow-Trip,FERT,PC,ELEC-CB,18.7,g,298,1000,2025-12-01
+ESS20-100-DC,Electronic Circuit Protector 100A 24V DC,FERT,PC,ELEC-ECP,245.0,g,89,1000,2025-12-01
+CB-H-01,Housing CB-2410 Series PA66,HALB,PC,MECH-HSG,3.2,g,5420,1000,2025-12-01
+CB-C-01,Contact Assembly CB-2410 AgNi,HALB,PC,ELEC-CNT,1.8,g,3200,1000,2025-12-01
+CB-S-01,Spring Mechanism CB-2410,HALB,PC,MECH-SPR,0.9,g,4100,1000,2025-12-01
+CB-B-01,Bimetal Element CB-2410,HALB,PC,ELEC-BIM,0.5,g,6800,1000,2025-12-01

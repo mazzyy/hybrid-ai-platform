@@ -1,0 +1,39 @@
+E-T-A Elektrotechnische Apparate GmbH - Employee Handbook
+
+Department: Human Resources
+Document Type: Policy
+Classification: Restricted (HR and Management only)
+Author: Anna Weber
+Date: 2025-01-15
+Version: 3.2
+
+1. Working Hours and Flexibility
+
+Standard working hours at E-T-A are 38.5 hours per week, Monday through Friday. Core hours are 9:00 to 15:00, with flexible start between 6:30 and 9:00 and flexible end between 15:00 and 19:00.
+
+Remote work is available up to 2 days per week for eligible roles, subject to manager approval. Production and laboratory staff are exempt from remote work arrangements.
+
+2. Leave Policy
+
+Annual Leave: 30 days per calendar year for all full-time employees.
+Sick Leave: Unlimited with medical certificate required after 3 consecutive days.
+Parental Leave: As per German federal law (Elternzeit), up to 3 years per child. E-T-A supplements statutory parental benefits with an additional 20% of base salary for the first 6 months.
+Special Leave: 2 days for marriage, 2 days for birth of a child, 1 day for moving.
+
+3. Compensation Structure
+
+Salary bands are reviewed annually in Q1. Performance bonuses are paid in March based on the previous year's performance rating. The bonus pool is typically 5-15% of annual salary depending on company performance and individual rating.
+
+Cost of living adjustments are negotiated with the works council (Betriebsrat) annually.
+
+4. Training and Development
+
+Each employee has an annual training budget of EUR 2,000. Technical certifications directly related to the role are covered separately without limit, subject to manager approval.
+
+E-T-A supports German language courses for international employees, covering up to EUR 1,500 per year.
+
+5. Data Privacy (Employee Data)
+
+Employee personal data is stored in SAP HR (PA module) and is accessible only to HR personnel and direct line managers for their reports. All access to employee data is logged and audited quarterly.
+
+Employees may request a full export of their personal data under GDPR Article 15 by contacting hr@eta-gmbh.de.

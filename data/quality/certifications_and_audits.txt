@@ -1,0 +1,52 @@
+E-T-A Elektrotechnische Apparate GmbH - Quality Management
+
+Department: Quality Assurance
+Document Type: Certification Summary
+Classification: Department Access
+Author: Stefan Huber
+Date: 2025-10-01
+
+1. Active Certifications
+
+ISO 9001:2015 - Quality Management System
+  Certified by: TÜV SÜD
+  Certificate Number: 12 100 12345
+  Valid until: 2027-03-15
+  Scope: Design, development, and manufacture of electromechanical and electronic circuit protection devices
+
+ISO 14001:2015 - Environmental Management System
+  Certified by: TÜV SÜD
+  Certificate Number: 12 104 67890
+  Valid until: 2026-11-30
+  Scope: Manufacturing operations at Altdorf facility
+
+IATF 16949:2016 - Automotive Quality Management
+  Certified by: DQS
+  Certificate Number: DE-2024-IATF-00456
+  Valid until: 2027-06-30
+  Scope: Automotive circuit breaker product lines
+
+UL Recognition
+  File Number: E123456
+  Categories: DIVQ, DIVQ7 (Circuit Breakers for Equipment)
+  Products: CB-series, ESS-series
+
+2. Recent Audit Results
+
+Internal Audit Q3 2025:
+  Total findings: 3 minor non-conformances, 0 major
+  Finding QA-2025-017: Calibration records for thermal test chamber TC-03 incomplete for July 2025. Corrective action completed 2025-09-15.
+  Finding QA-2025-018: Incoming inspection sampling plan for supplier S-2201 not updated after supplier re-qualification. Corrective action completed 2025-09-20.
+  Finding QA-2025-019: Training matrix for new quality inspector not completed within 30-day onboarding window. Corrective action completed 2025-09-25.
+
+External Audit (TÜV SÜD) September 2025:
+  Result: Recertification passed with 0 major and 1 minor finding
+  Minor finding: Document control process for engineering change notices (ECN) needs improvement in version tracking.
+
+3. Key Quality Metrics (YTD 2025)
+
+Customer Complaint Rate: 0.12% (target: <0.5%)
+First Pass Yield - CB Series: 99.2% (target: >98.5%)
+First Pass Yield - ESS Series: 98.8% (target: >98.5%)
+Supplier Quality Rating (avg): 94.5/100 (target: >90)
+On-Time Delivery: 96.8% (target: >95%)

@@ -1,0 +1,15 @@
+part_number,test_type,test_date,rated_current_A,rated_voltage_V,trip_time_135pct_s,trip_time_200pct_s,ambient_temp_C,result,tester
+CB-2410-F1,Thermal Trip,2025-08-01,10,24,45,6.2,23,PASS,T. Mueller
+CB-2410-F1,Thermal Trip,2025-08-01,10,24,52,7.1,23,PASS,T. Mueller
+CB-2410-F1,Thermal Trip,2025-08-02,10,24,48,5.8,23,PASS,T. Mueller
+CB-2410-S1,Thermal Trip,2025-08-03,10,24,95,12.3,23,PASS,K. Weber
+CB-2410-S1,Thermal Trip,2025-08-03,10,24,101,11.8,23,PASS,K. Weber
+CB-2410-M1,Thermal Trip,2025-08-05,10,24,55,6.9,23,PASS,T. Mueller
+CB-2410-M1,Salt Spray,2025-08-10,10,24,,,23,PASS,M. Berger
+CB-2410-F1,Dielectric,2025-08-12,10,24,,,23,PASS,K. Weber
+CB-2410-F1,Endurance 6000cy,2025-08-15,10,24,51,7.0,23,PASS,T. Mueller
+CB-5020-F1,Thermal Trip,2025-08-20,20,50,38,5.5,23,PASS,T. Mueller
+CB-5020-F1,Thermal Trip,2025-08-20,20,50,42,6.1,23,PASS,K. Weber
+CB-5020-S1,Thermal Trip,2025-08-22,20,50,88,10.2,23,PASS,K. Weber
+ESS20-100-DC,Electronic Trip,2025-09-01,100,24,,,23,PASS,M. Berger
+ESS20-100-DC,Short Circuit,2025-09-02,100,24,,,23,PASS,M. Berger

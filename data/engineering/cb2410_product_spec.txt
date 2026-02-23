@@ -1,0 +1,64 @@
+E-T-A Elektrotechnische Apparate GmbH - Product Specification
+
+Product: CB-2410 Thermal Circuit Breaker
+Document Type: Engineering Specification
+Classification: Department Access Only
+Author: Thomas Mueller
+Date: 2025-09-15
+Revision: Rev C
+
+1. Product Overview
+
+The CB-2410 is a thermal circuit breaker designed for DC applications in industrial control panels and automotive auxiliary circuits. It provides reliable overcurrent protection with manual reset capability.
+
+2. Technical Specifications
+
+Rated Voltage: 24V DC
+Rated Current: 10A
+Breaking Capacity: 1000A at 24V DC
+Insulation Resistance: >100 MΩ at 500V DC
+Dielectric Strength: 1500V AC for 1 minute
+Contact Resistance: <50 mΩ initial
+Operating Temperature: -40°C to +85°C
+Storage Temperature: -55°C to +100°C
+Protection Rating: IP40 (panel mount)
+Weight: 12.5g
+Mounting: Snap-in panel mount, 15.8mm cutout
+
+3. Thermal Characteristics
+
+Trip Time at 135% In: 30-120 seconds (ambient 23°C)
+Trip Time at 200% In: 4-15 seconds (ambient 23°C)
+Trip Time at 600% In: 0.1-1.0 seconds
+Derating Factor: -3.5% per °C above 23°C
+
+4. Materials and Construction
+
+Housing: Polyamide PA66, UL94 V-0 rated
+Contacts: Silver-Nickel (AgNi)
+Bimetal Element: High-precision bimetal strip, calibrated at factory
+Terminal Type: Quick-connect 6.3mm x 0.8mm
+Actuator: Toggle type, positive ON/OFF indication
+
+5. Compliance and Certifications
+
+UL 1077 (Supplementary Protectors)
+IEC 60934 (Circuit Breakers for Equipment)
+VDE certified
+RoHS compliant
+REACH compliant
+
+6. Ordering Information
+
+Part Number: CB-2410-F1 (standard, fast-trip)
+Part Number: CB-2410-S1 (standard, slow-trip)
+Part Number: CB-2410-M1 (marine grade, conformal coated)
+Minimum Order Quantity: 100 pieces
+Lead Time: 4-6 weeks (standard), 8-10 weeks (marine grade)
+
+7. Related Parts
+
+Housing: CB-H-01 (Rev D, approved 2025-11-20 by J. Mueller)
+Contact Assembly: CB-C-01 (Rev B)
+Spring Mechanism: CB-S-01 (Rev A)
+Bimetal Element: CB-B-01 (Rev C)
