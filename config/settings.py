@@ -22,6 +22,12 @@ EMBEDDING_DIMENSION = 384  # Changes to 1024 for BGE-M3
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "mistral")
 
+# Azure OpenAI
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "https://veilixdocumentextraction.openai.azure.com/")
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "")
+AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-02-15-preview")
+
 # ─── Vector Store ────────────────────────────────────────────────────
 # Production: Qdrant (Docker, 16GB RAM, SSD storage)
 # Prototype:  ChromaDB (embedded, persistent local storage)

@@ -13,11 +13,13 @@ from typing import Optional
 
 import ollama
 
-from config.settings import OLLAMA_MODEL, OLLAMA_BASE_URL, TOP_K_RESULTS
+from config.settings import OLLAMA_MODEL, OLLAMA_BASE_URL, TOP_K_RESULTS, AZURE_OPENAI_API_KEY, AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_DEPLOYMENT, AZURE_OPENAI_API_VERSION
 from config.rbac import get_retrieval_filter, ROLE_ACCESS, MOCK_USERS
 from retrieval.embedder import Embedder
 from retrieval.vector_store import VectorStore
 from retrieval.hybrid_search import HybridSearch
+from retrieval.llm_router import QueryRouter
+from openai import AzureOpenAI
 
 
 class RAGEngine:
@@ -32,7 +34,15 @@ class RAGEngine:
         self.vector_store = VectorStore()
         self.hybrid_search = HybridSearch(self.embedder, self.vector_store)
         self.model = OLLAMA_MODEL
-        print(f"RAG Engine ready. LLM: {self.model} via Ollama")
+        self.router = QueryRouter()
+        
+        # Initialize Azure OpenAI Client
+        self.azure_client = AzureOpenAI(
+            api_key=AZURE_OPENAI_API_KEY,
+            api_version=AZURE_OPENAI_API_VERSION,
+            azure_endpoint=AZURE_OPENAI_ENDPOINT,
+        )
+        print(f"RAG Engine ready. LLM: {self.model} via Ollama and Azure OpenAI ({AZURE_OPENAI_DEPLOYMENT})")
 
     def query(
         self,
@@ -42,13 +52,39 @@ class RAGEngine:
         top_k: int = TOP_K_RESULTS,
     ) -> dict:
         """
-        Full RAG pipeline:
-        1. Build RBAC filter from user role
-        2. Retrieve relevant chunks (hybrid search with RBAC)
-        3. Build prompt with context
-        4. Generate answer via local LLM
-        5. Return answer with source provenance
+        Full RAG pipeline and routing:
+        1. Classify query (router)
+        2. Route:
+           - simple/confidential: Ollama local (no RAG)
+           - complex: Azure OpenAI (no RAG)
+           - rag: Vector retrieval + Ollama local
         """
+        
+        route_type = self.router.classify_query(question)
+        print(f"📝 Routed Query as '{route_type}'")
+        
+        if route_type in ["simple", "confidential"]:
+             # Bypass RAG entirely, query Ollama
+             answer = self._generate(f"Employee {user_name} asks: {question}")
+             return {
+                 "answer": answer,
+                 "sources": [],
+                 "user_role": user_role,
+                 "chunks_retrieved": 0,
+                 "context_preview": "Routed via Local Ollama (No RAG context used)",
+             }
+        elif route_type == "complex":
+            # Direct to Azure OpenAI
+            answer = self._azure_generate(f"Employee {user_name} asks: {question}")
+            return {
+                "answer": answer,
+                "sources": [],
+                "user_role": user_role,
+                "chunks_retrieved": 0,
+                "context_preview": "Routed via Azure OpenAI (No RAG context used)",
+            }
+            
+        # Fallback is "rag"
         # Step 1: RBAC filter
         rbac_filter = self._build_simple_filter(user_role)
 
@@ -145,6 +181,23 @@ Answer:"""
                 f"Error connecting to Ollama ({self.model}): {e}\n\n"
                 "Make sure Ollama is running: `ollama serve`\n"
                 f"And the model is pulled: `ollama pull {self.model}`"
+            )
+            
+    def _azure_generate(self, prompt: str) -> str:
+        """Generate answer using Azure OpenAI."""
+        try:
+            response = self.azure_client.chat.completions.create(
+                model=AZURE_OPENAI_DEPLOYMENT,
+                messages=[
+                    {"role": "system", "content": "You are a highly capable analytical assistant."},
+                    {"role": "user", "content": prompt}
+                ],
+            )
+            return response.choices[0].message.content
+        except Exception as e:
+            return (
+                 f"Error connecting to Azure OpenAI: {e}\n\n"
+                 "Please check your Azure API credentials and deployment configuration."
             )
 
     def _extract_sources(self, results: list[dict]) -> list[dict]:
