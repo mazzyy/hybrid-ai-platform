@@ -22,36 +22,50 @@ ROLE_ACCESS = {
         "allowed_access_levels": ["public"],
         "allowed_departments": None,  # No department-level access
         "description": "Basic employee access - product manuals, public docs",
+        "questions_can_ask": ["What are E-T-A's core values?", "How do I reset my password?", "What are the holiday policies?"],
+        "questions_cannot_ask": ["What is the Q3 revenue?", "Show me the CAD models for the new circuit breaker", "What is David Braun's salary?"]
     },
     "engineering": {
         "allowed_access_levels": ["public", "department"],
         "allowed_departments": ["engineering"],
         "description": "Engineering specs, test reports, CAD metadata, BOMs",
+        "questions_can_ask": ["What are the specifications for the 3120-N series?", "How is testing conducted for thermal circuit breakers?"],
+        "questions_cannot_ask": ["Show me employee performance reviews.", "What is the marketing budget?"]
     },
     "production": {
         "allowed_access_levels": ["public", "department"],
         "allowed_departments": ["production", "engineering"],  # Production can see engineering specs
         "description": "Production data, SOPs, work instructions, CAD files",
+        "questions_can_ask": ["What is the assembly process for 1140 series?", "Are there any known defects reported for relay X?"],
+        "questions_cannot_ask": ["What is the company's financial forecast?", "Can I see the HR onboarding manual?"]
     },
     "quality": {
         "allowed_access_levels": ["public", "department"],
         "allowed_departments": ["quality"],
         "description": "Audit checklists, certification reports, standards",
+        "questions_can_ask": ["What are the ISO 9001 compliance requirements?", "Show me the latest audit checklists."],
+        "questions_cannot_ask": ["What is the R&D budget for next year?", "What is the HR policy for remote work?"]
     },
     "hr": {
         "allowed_access_levels": ["public", "department", "restricted"],
         "allowed_departments": ["hr"],
         "description": "HR records, employee data, policies",
+        "questions_can_ask": ["What are the remote work guidelines?", "How do I onboard a new employee?", "What is the standard vacation allowance?"],
+        "questions_cannot_ask": ["What are the technical specs of the 2210 series?", "Show me the production schedule for next month."]
     },
     "finance": {
         "allowed_access_levels": ["public", "department"],
         "allowed_departments": ["finance"],
         "description": "Budget reports, FI/CO data",
+        "questions_can_ask": ["What was the Q2 operating expense?", "How do I submit an expense report?"],
+        "questions_cannot_ask": ["What are the design tolerances for part number 1234?", "Show me the production line SOP."]
     },
     "management": {
         "allowed_access_levels": ["public", "department", "restricted", "confidential"],
         "allowed_departments": None,  # Access to all departments
         "description": "Full access to all data categories",
+        "questions_can_ask": ["What is the overall Q3 financial performance?", "Are there any critical quality issues reported?", "What is the status of the new HR policy?"],
+        "questions_cannot_ask": ["(Can ask about anything across departments)"]
     },
 }
 

@@ -95,8 +95,14 @@ python scripts/chat.py --query "What is the thermal rating of CB-2410?"
 
 ### 5. Query via Web UI
 
+To use the web UI, you need to ensure Ollama is running in the background first so that the local LLM is accessible.
+
 ```bash
-# Start the Streamlit UI
+# 1. Start Ollama (if not already running via the Mac app)
+# You can start it from your Applications folder, or run:
+ollama serve
+
+# 2. In a NEW terminal window, start the Streamlit UI
 streamlit run api/ui.py
 ```
 

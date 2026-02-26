@@ -70,6 +70,40 @@ with st.sidebar:
     | Financial | ✗ | ✗ | ✗ | ✓ |
     """)
 
+    st.divider()
+    st.header("📂 Accessible Files")
+    from config.rbac import can_access
+    try:
+        results = engine.vector_store.collection.get(include=["metadatas"])
+        metadatas = results.get("metadatas", [])
+        accessible_files = set()
+        for meta in metadatas:
+            if can_access(user["role"], meta):
+                accessible_files.add(meta.get("source_file", "Unknown"))
+        
+        if accessible_files:
+            for file in sorted(list(accessible_files)):
+                st.markdown(f"- 📄 `{file}`")
+        else:
+            st.info("No files accessible.")
+    except Exception as e:
+        st.error(f"Could not load files: {e}")
+
+    st.divider()
+    st.header("💡 Example Questions")
+    
+    can_ask = role_info.get("questions_can_ask", [])
+    if can_ask:
+        st.subheader("✅ You can ask:")
+        for q in can_ask:
+            st.markdown(f"- {q}")
+            
+    cannot_ask = role_info.get("questions_cannot_ask", [])
+    if cannot_ask:
+        st.subheader("❌ You cannot ask:")
+        for q in cannot_ask:
+            st.markdown(f"- {q}")
+
 
 # ─── Chat Interface ─────────────────────────────────────────────────
 if "messages" not in st.session_state:
