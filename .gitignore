@@ -7,6 +7,7 @@ venv/
 .venv/
 env/
 .env/
+.env
 
 # Environment files (keep example files tracked)
 .env.*
