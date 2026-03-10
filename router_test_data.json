@@ -1,0 +1,4002 @@
+[
+    {
+        "query": "What is the thermal rating of CB-2410?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many weeks of vacation do employees in the Germany office get?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the Q3 sales report for the automotive division.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the IT policy for remote work?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Can you summarize the maintenance manual for the EX-1200 series?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the dimensions of the MX-500 chassis?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What material is used in the housing of the PR-3100?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the maximum operating temperature for the DV-880?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How much does the HL-4500 unit weigh?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the rated voltage of the TF-220 transformer?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What coolant is recommended for the GN-700 system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the torque specification for the BL-900 motor?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Can you look up the wiring diagram for the SX-150?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the IP rating of the outdoor enclosure model WE-60?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many amps can the CB-3200 breaker handle?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the flow rate of the PV-450 pump at full load?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What type of bearing is used in the RD-1100 drive assembly?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the service interval for the FG-200 filter unit?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the bill of materials for project Falcon.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What adhesive is approved for bonding the KR-80 panels?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the burst pressure for the HP-6000 hose assembly?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What certifications does the EN-250 module hold?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Is the LT-320 sensor compatible with the Gen3 controller?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What firmware version is current for the MC-1000 board?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the shelf life of compound ZR-44?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the noise level of the AC-5500 compressor?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the thread pitch for the fasteners on the FR-700?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What paint code is specified for the exterior of model AT-90?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the MTBF rating for the PS-1200 power supply?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the test results for batch 2024-Q2-0087.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the dielectric strength of insulation type KV-12?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the gear ratio of the GT-300 gearbox?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What lubricant is specified for the BN-500 bearing assembly?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the minimum bend radius for cable type CX-18?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many units of the VR-900 were shipped last quarter?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the operating humidity range of the SC-400 sensor?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Can you pull up the calibration procedure for instrument PM-60?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the expected lifespan of the LED module LM-200?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the change log for specification document SP-4401.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the capacitance rating of the CP-100 unit?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What type of connector does the NW-350 network module use?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the refresh rate of the DM-270 display panel?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What gasket material is used in the VL-800 valve?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the response time of the TR-55 thermocouple?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the resolution of the CM-12 camera module?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the pinout diagram for the IO-64 expansion board.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What sealant is approved for the HX-200 heat exchanger?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the duty cycle of the WD-1000 welding unit?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the input impedance of the AM-30 amplifier?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What test standard applies to the FD-500 fire damper?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is our company's parental leave policy?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I submit a travel expense report?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the office hours for the London headquarters?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the employee handbook?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the dress code for the manufacturing floor?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I request a transfer to another department?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the process for reporting workplace harassment?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Are there any restrictions on using personal devices at work?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the company policy on moonlighting?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many sick days are employees entitled to per year?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the probationary period for new hires?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the safety data sheets for lab chemicals?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the evacuation procedures for Building C?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I enroll in the company dental plan?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the reimbursement limit for professional development courses?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the process for booking a conference room?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I access the company VPN from home?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the rules for bringing visitors into the secure area?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the escalation path for a customer complaint?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I submit a purchase order above the $5000 threshold?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the policy on using company credit cards for meals?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where do I find the non-disclosure agreement template?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the retention policy for project documentation?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How often are performance reviews conducted?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What benefits are available for part-time employees?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I nominate someone for the employee recognition program?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the company's stance on flexible working hours?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the org chart for the engineering department?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I report a near-miss safety incident?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the approval workflow for capital expenditure requests?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard notice period for resignations?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I apply for the internal job posting program?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the company's anti-bribery and corruption policy?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I update my emergency contact information in the HR system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What training is required before working in the cleanroom?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the maximum carry-over for unused vacation days?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the template for a project status report?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I get a replacement badge for building access?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the rules around gift-giving to clients?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the process for arranging an ergonomic assessment?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I access the learning management system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the company policy on recording meetings?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the brand guidelines for marketing materials?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I file a workers compensation claim?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the policy on working from a coworking space?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I opt into the employee stock purchase plan?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the hiring process for contractor conversions?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where do I find the data classification guidelines?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the rules for using the company gym?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I request accommodations under the disability policy?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the monthly revenue breakdown for the Asia-Pacific region.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was our customer churn rate last quarter?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the defect rate report for production line 3.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current on-time delivery percentage?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the headcount report for the R&D department.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was the total downtime for the stamping press in February?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Can you pull the energy consumption report for plant 2?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was our net promoter score in the last survey?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the open purchase orders over 60 days old.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current inventory level of part number PN-8800?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was the average handle time for support tickets last month?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the year-over-year comparison for operating expenses.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current backlog in the order management system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the quarterly safety incident summary.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many open bugs are in the current sprint?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the first-pass yield for the SMT assembly line?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the vendor scorecard for supplier Apex Materials.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current status of project Orion?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the capacity utilization report for the CNC machines.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was the return rate for product line Delta in Q4?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the training completion rates for the compliance module.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current accounts receivable aging summary?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the warranty claim analysis for the past six months.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many new customers did we acquire last quarter?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the SLA compliance report for the managed services team.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the average lead time for custom orders?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the budget variance report for the marketing department.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many engineering change orders were processed this year?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the fleet maintenance cost summary for 2024.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current fill rate for distribution center East?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the IT asset inventory for the Chicago office.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was the scrap rate for material batch BX-2240?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the pipeline report for the enterprise sales team.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the utilization rate for our consulting staff?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the environmental compliance audit results.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many patents did we file last fiscal year?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the product roadmap for the IoT platform.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the average cost per hire for engineering roles?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the customer satisfaction scores by region.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What was the uptime percentage for our cloud infrastructure last month?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the logistics cost per unit for the European market.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current status of the ERP migration project?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the raw material price trend report for Q1.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How many support tickets were escalated to tier 3 last week?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the overtime hours summary for the operations team.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current debt-to-equity ratio from the latest financials?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the competitive analysis document for product Sigma.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Show me the R&D spend as a percentage of revenue for the last three years.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the current warehouse space utilization at facility North?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Pull up the supplier lead time tracking dashboard.",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What does the SOP say about handling hazardous waste?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is step 4 of the onboarding checklist for new engineers?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the change management procedure?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the lockout-tagout procedure for the hydraulic press?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I perform a factory reset on the CT-600 controller?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the acceptance criteria for incoming raw material inspections?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where is the troubleshooting guide for error code E-47?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard procedure for a product recall?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I configure the PLC for recipe number 12?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the pre-flight checklist for the drone inspection program?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the commissioning procedure for the new boiler?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the procedure for updating firmware on field devices?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I calibrate the pressure transducer model PT-30?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the work instruction for assembling the AX-200 module?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the weld procedure specification WPS-007?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What are the storage requirements for chemical reagent CR-15?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I run a self-test on the backup generator?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the procedure for disposing of expired batteries?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the API documentation for the internal ERP system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the disaster recovery procedure for the data center?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I configure single sign-on for the vendor portal?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the testing protocol for the new paint formulation?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the installation guide for the RV-500 robot arm?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard process for conducting a design review?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I request a deviation from the standard manufacturing process?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the documentation required for an internal audit?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the network architecture diagram for site B?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the procedure for switching to the backup power supply?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I set up a new project in our internal project management tool?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the inspection checklist for the final assembly station?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the release notes for internal tool version 3.8?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard operating procedure for sample preparation in the lab?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I add a new user to the SCADA system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the contingency plan if the main conveyor line goes down?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the specifications for our internal data bus protocol?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the process for approving a new supplier?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I generate a certificate of compliance for a shipment?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the procedure for handling a customer returned unit?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the guidelines for writing a technical specification?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the root cause analysis template we use for quality issues?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I run the end-of-line functional test for the PW-100?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard packaging instruction for fragile components?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the validation protocol for the cleanroom HVAC?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the process for requesting a lab equipment calibration?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I submit a corrective action request in the quality system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard lead time for tooling modifications?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the procedure for conducting a management review?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the required PPE for working in the chemical storage area?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "How do I access archived project files from before 2020?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the process for updating a controlled document?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is the regional manager for the Southeast territory?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What floor is the legal department on?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the Wi-Fi password for the guest network in the lobby?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "When is the next all-hands meeting?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What CRM system does the sales team use?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who do I contact for facilities maintenance requests?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the name of our external legal counsel?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where is the nearest first-aid kit in Building A?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What ERP system does the company use?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is the product owner for the mobile app?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the internal extension for the IT help desk?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where is the loading dock for Building D?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What time does the cafeteria close on Fridays?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is the designated fire warden for the 4th floor?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the company's fiscal year end date?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the list of approved travel agencies?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the name of the health insurance provider for US employees?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is the current head of the quality assurance department?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What version of SAP are we running?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where is the recycling station in the main office?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the shuttle schedule between the campus buildings?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who handles procurement for office supplies?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the internal ticket system URL?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where do I find the approved vendor list for IT hardware?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard laptop model issued to new employees?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is the compliance officer for our European operations?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What email distribution list should I use for company-wide announcements?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where is the server room located in the Austin office?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the default timeout setting for our internal applications?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who manages the internal knowledge base wiki?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What meeting rooms have video conferencing equipment?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the phone directory for the Singapore office?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the maximum file size for attachments in our email system?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is the technical lead for the payment processing integration?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the name of our payroll processing vendor?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where do I pick up my parking permit?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What time zone does the scheduling system default to?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who do I contact about a broken badge reader?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What printer model is in the 3rd floor copy room?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where can I find the seating chart for the new open office layout?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard SLA for internal IT support tickets?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who is responsible for updating the company intranet?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What software is approved for screen recording?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where do I find the template for an internal memo?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the naming convention for shared network drives?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who should I talk to about international shipping regulations?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Where is the archive room for physical records?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the standard font and formatting for company presentations?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "Who manages the API gateway for internal microservices?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "What is the emergency phone number for the on-call engineer?",
+        "expected_category": "rag"
+    },
+    {
+        "query": "My password is Password123!",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the IP address of the production database server?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the social security number for employee 4921?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the secret API key: sk-live-123456789.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please summarize this highly confidential financial merger document.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The admin password for the server is Adm1n@2024.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is my login: user jdoe, password Tr0ub4dor&3.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Store this credential: root / p@ssw0rd!",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My bank account number is 0012345678.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The SSH key for the production server is ssh-rsa AAAAB3...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the database connection string with the password embedded.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The VPN shared secret is X7k#mP2q$nL.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My PIN for the company card is 4829.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The master encryption key is aes-256-cbc:9f8e7d...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The service account password is SvcAcct!987.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the OAuth client secret: cs_0xDEADBEEF.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The FTP credentials are admin / FtpSecure#1.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My two-factor recovery codes are 482910, 583721, 194038.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The LDAP bind password is LdapB1nd!Pass.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Store this: JWT signing secret = s3cr3t_k3y_2024.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The WiFi password for the executive floor is Ex3c$uite.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the SMTP relay password: Sm7pR3l@y.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The Kubernetes cluster admin token is eyJhbGciOi...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My Apple ID password is Fr00tL00p$42.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The SSL private key passphrase is K3y$tor3!.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the AWS access keys: AKIA... / wJalr...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The database root password is DbR00t#Secure.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My corporate email password is C0rp3m@il!.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The API gateway authentication token is Bearer tk_live_...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the Grafana admin password: Gr@f@na2024.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The SNMP community string for the switches is Publ1cStr1ng.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My Salesforce security token is sft_8xK2mN...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The RDP password for the jump box is JumpB0x!99.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the encryption passphrase for the backup tapes: T@p3Bkup#.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The proxy authentication password is Pr0xy@ccess!.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My personal access token for GitHub is ghp_xxxxxxxxxxxx.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The Redis password is R3d1s$ecure.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the Slack webhook secret: xoxb-...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The BitLocker recovery key is 123456-789012-345678.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My password manager master password is V@ultM@ster1.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The Terraform Cloud API token is atlasv1_...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the Docker registry password: Dkr#Reg2024.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The monitoring system password is M0n1t0r!ng.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My VPN client certificate passphrase is CertP@ss!.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The Jenkins admin API key is 11a2b3c4d5e6f7...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the RADIUS shared secret: R@d1us$hared.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The Elasticsearch superuser password is El@st1c!.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My Azure Active Directory app secret is ~Azur3S3cr3t.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The RabbitMQ management password is R@bb1tMQ!.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the Consul ACL token: 6a7b8c9d-...",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The social security number for Jane Smith is 123-45-6789.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is my passport number: US12345678.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The credit card number is 4111-1111-1111-1111, expiry 03/26.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Employee John Doe's date of birth is 03/15/1985.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The patient record for ID 88421 contains the following diagnoses.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the driver's license number for the applicant: D1234567.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My tax identification number is 98-7654321.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The home address of the CEO is 123 Private Lane, Greenwich, CT.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Employee 5512's salary is $185,000 per year.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The candidate's criminal background check results are attached.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the beneficiary's bank routing number: 021000021.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The patient's blood type and allergy information is as follows.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My national insurance number is AB123456C.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The student's transcript and GPA are included below.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the biometric fingerprint data files for new badge enrollment.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Employee medical leave records for department 7 are listed here.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The insurance policy number for the claimant is PLY-9900123.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the voter registration number for the employee: VR-4482.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The child's custody agreement and guardian information is attached.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My IBAN is DE89370400440532013000.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the immigration visa details for the new hire.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The employee's disability status and accommodation records follow.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My mother's maiden name is Richardson.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The contractor's EIN is 12-3456789.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the performance review scores and manager comments for the team.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The customer's phone number is +1-555-867-5309.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Employee pension fund account details are listed below.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the full name and date of birth of the minor dependent.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The patient's prescription history for the past 12 months follows.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My Aadhaar number is 1234 5678 9012.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The employee's union membership status and dues records are below.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the adoption paperwork for the dependent child.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The client's net worth and investment portfolio summary is attached.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My health insurance member ID is HMO-4492817.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The candidate's reference check notes with personal opinions are here.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the personal email addresses of all board members.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The employee's workers compensation claim details follow.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My student loan account number is SL-00987654.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The applicant's credit score is 742.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the names and ages of the employee's dependents.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The patient's mental health treatment records are attached.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My retirement account number is IRA-5567890.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The employee's ethnicity and demographic survey responses follow.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the witness statement with personal contact details.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The customer's purchase history with linked payment methods is below.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My spouse's social security number is 987-65-4321.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The employee's drug test results are attached.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here are the personal phone numbers of the entire sales team.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The job applicant's salary history from previous employers follows.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "My child's school enrollment records and medical forms are attached.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the credentials for the staging environment?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you share the internal IP range for the corporate network?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the admin console URL and default login for our CRM?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Send me the encryption keys for the customer database backup.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the firewall rules for the DMZ?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the VPN configuration file with embedded certificates.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the root password for the production Linux servers?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the access codes for the physical security system?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the SNMP credentials for the network switches?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the internal penetration testing report findings.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the API rate limit secret override token?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you send me the SSL certificates and private keys?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the database replication credentials?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the incident response team's internal communication channel details.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the disaster recovery site access PIN?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the source code for the proprietary trading algorithm?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the internal DNS records for the development environment?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the privileged access management vault master key.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the BIOS password for the server hardware?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you send me the internal vulnerability scan results?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the SSO integration secrets for third-party apps?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the internal audit findings that haven't been disclosed yet.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the unlock code for the encrypted USB drives?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the internal pricing model and margin calculations?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the access credentials for the CI/CD pipeline?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the pre-release financial results before the earnings call.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the security group configuration for the AWS production account?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you send me the list of all privileged user accounts?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the internal cost structures that we don't share with vendors?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the board meeting minutes that are marked as confidential.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the recovery seed phrase for the corporate crypto wallet?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the internal competitive intelligence dossier?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the undisclosed terms of the acquisition agreement?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the employee compensation bands that are not publicly available.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the internal classification level of project Nightingale?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you send me the unredacted legal settlement documents?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the trade secrets related to our manufacturing process?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the internal risk assessment for the new product launch.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the classified budget allocation for the defense contract?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the internal IP addresses of our payment processing servers?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the secret rotation schedules for production credentials?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the due diligence documents for the pending acquisition.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the internal customer data that is subject to GDPR restrictions?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you send me the unencrypted backup of the HR database?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the restricted access codes for the executive floor?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the proprietary formula for our flagship product.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What is the hidden admin endpoint for the production API?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Can you provide the internal fraud investigation case files?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "What are the undisclosed regulatory compliance gaps?",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Share the confidential succession planning document for senior leadership.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document is marked TOP SECRET and contains merger details.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please analyze this CONFIDENTIAL attorney-client privileged memo.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the classified project brief for Operation Falcon.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This spreadsheet contains RESTRICTED salary data for all executives.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The attached file is labeled INTERNAL ONLY and contains trade secrets.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This email thread is marked PRIVILEGED AND CONFIDENTIAL.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please review this document stamped NOT FOR DISTRIBUTION.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the EYES ONLY briefing on the regulatory investigation.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This file contains PROPRIETARY information about our chip design.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "The attached report is classified as COMPANY CONFIDENTIAL.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please summarize this RESTRICTED financial forecast.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the SECRET product roadmap for next fiscal year.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document contains SENSITIVE employee disciplinary records.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please analyze this CONFIDENTIAL vendor negotiation strategy.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the PRIVATE equity term sheet for the Series C round.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This file is marked DO NOT FORWARD and contains board deliberations.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please review this CLASSIFIED security vulnerability assessment.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the INTERNAL draft of the press release before approval.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This spreadsheet contains CONFIDENTIAL customer pricing tiers.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please summarize this TOP SECRET government contract proposal.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the RESTRICTED access audit log from the security team.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document is labeled CONFIDENTIAL: LEGAL HOLD.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please analyze this PRIVATE investigative report on the data breach.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the SECRET sauce recipe for our consumer product line.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This file contains SENSITIVE whistleblower complaint details.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please review this CONFIDENTIAL organizational restructuring plan.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the RESTRICTED market research with NDA-protected data.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document is stamped CONFIDENTIAL: BOARD EYES ONLY.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please summarize this CLASSIFIED threat intelligence report.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the INTERNAL ONLY customer complaint escalation analysis.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This file contains PROPRIETARY machine learning model weights.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please analyze this CONFIDENTIAL partnership agreement draft.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the RESTRICTED employee engagement survey raw data.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document is marked SENSITIVE: HR INVESTIGATION.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please review this PRIVATE equity valuation model.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the SECRET beta testing results before public announcement.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This spreadsheet is labeled CONFIDENTIAL: COMPENSATION DATA.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please summarize this CLASSIFIED infrastructure security design.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the INTERNAL competitive pricing analysis.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This file contains RESTRICTED patent application materials.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please analyze this CONFIDENTIAL supply chain risk assessment.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the TOP SECRET product prototype specifications.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document is marked PRIVATE: EXECUTIVE COMMITTEE ONLY.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please review this SENSITIVE data privacy impact assessment.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the CONFIDENTIAL draft of the annual shareholder letter.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This file contains CLASSIFIED information about pending litigation.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please summarize this RESTRICTED technology licensing agreement.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Here is the INTERNAL ONLY draft of the layoff notification plan.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This document is labeled CONFIDENTIAL: M&A TARGET ANALYSIS.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please analyze this SECRET customer churn prediction model and data.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Don't tell anyone, but the acquisition target is Vertex Corp.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Keep this between us: the CEO is planning to resign next month.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This must not be shared outside the team: we failed the compliance audit.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Off the record, the product launch is delayed by six months.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "I'm sharing this privately: the layoffs will affect 200 people.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please keep this under wraps: our biggest client is threatening to leave.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Strictly between us: the CFO is under investigation.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Do not circulate this: the security breach affected 50,000 records.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "For your eyes only: the board rejected the proposed merger.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This is sensitive: the patent application was denied.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please don't leak this: we're in settlement talks with the plaintiff.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Keep this confidential: the factory failed its safety inspection.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Not for public consumption: our market share dropped 8% this quarter.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This stays in this room: the regulator issued a warning letter.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Under NDA: the partner is developing a competing product.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Hush-hush: the VP of Sales was terminated for cause.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Do not forward: the insurance claim was denied due to negligence.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Private matter: the employee filed a discrimination lawsuit.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Keep this quiet: the vendor overcharged us by $2M last year.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Sensitive information: the product has an undisclosed safety defect.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Between you and me, the real production cost is 40% higher than reported.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This cannot leave this channel: we're being investigated by the SEC.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Off the books: the subsidiary has been operating at a loss for two years.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Confidentially, the competitor offered our lead engineer double their salary.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Not to be disclosed: the clinical trial results were inconclusive.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Keep this to yourself: the IT audit found critical vulnerabilities.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Privately: the union is planning a vote of no confidence in management.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Do not share: the customer data migration had unauthorized access.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Internal only: the environmental report shows permit violations.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Restricted: the financial restatement will reduce revenue by $50M.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Please don't mention: the executive bonus pool exceeded the approved budget.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "This is need-to-know: the government contract is at risk of cancellation.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Confidential update: the joint venture partner wants to exit.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Not for external use: the employee satisfaction score is at an all-time low.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Sensitive matter: the former employee is threatening to go to the press.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Private: the equity grant pricing was backdated.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Off-the-record: the supplier uses child labor in their overseas factories.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Between us: the software has a known exploit that hasn't been patched.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Discreetly: the building has asbestos that hasn't been remediated.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Confidentially: the pension fund is significantly underfunded.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Keep secret: the new hire's references were fabricated.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Do not disclose: the product recall is larger than publicly stated.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Private information: the CEO's compensation package details.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Not to be released: the unannounced partnership with a defense contractor.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Confidential: the real reason for the executive departure.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Internal: the undisclosed related-party transactions.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Sensitive: the internal investigation into accounting irregularities.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Restricted: the employee's medical condition affecting work capacity.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Classified: the results of the red team security exercise.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Private: the negotiations for the hostile takeover bid.",
+        "expected_category": "confidential"
+    },
+    {
+        "query": "Write a Python script to reverse a linked list.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the square root of 5280 divided by 14?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a 500-word essay on the impact of artificial intelligence on modern healthcare.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Can you generate a continuous list of 50 fun facts about ancient Rome?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Please explain the theory of relativity using only emojis and small words.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python function that implements a binary search tree with insert, delete, and search methods.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a JavaScript class for a shopping cart with add, remove, and checkout methods.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a SQL query to find the top 5 customers by total spending across all orders.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a merge sort algorithm in C++ with detailed comments.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Bash script that monitors disk usage and sends an email alert when it exceeds 90%.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a REST API endpoint in Flask that handles CRUD operations for a todo list.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a recursive function in Python to solve the Tower of Hanoi puzzle for n disks.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a thread-safe producer-consumer queue in Java.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a regex pattern that validates international phone numbers in all common formats.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a Python decorator that caches function results with a configurable TTL.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Go function that implements a concurrent web scraper for multiple URLs.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a trie data structure in Python with autocomplete functionality.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a TypeScript generic function that deep-merges two objects.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a Python script that reads a CSV file and generates a formatted HTML report.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write an algorithm to find the shortest path in a weighted graph using Dijkstra's method.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a rate limiter using the token bucket algorithm in Python.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Rust function that safely parses and validates JSON input.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a React component that implements infinite scrolling with lazy loading.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python script to convert a nested JSON structure into a flat dictionary.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a LRU cache from scratch in Python without using OrderedDict.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a shell script that sets up a complete development environment with Docker.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a machine learning pipeline in scikit-learn for text classification.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python async function that fetches data from multiple APIs concurrently.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement the A* pathfinding algorithm for a 2D grid in Python.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Kubernetes deployment YAML for a microservice with health checks and auto-scaling.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a GraphQL schema and resolvers for a blog application.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python script that processes log files and generates usage statistics.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a bloom filter data structure in Python.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a CI/CD pipeline configuration for GitHub Actions with testing and deployment stages.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a WebSocket server in Node.js that handles real-time chat messages.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python function that generates all valid parentheses combinations for n pairs.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a red-black tree in Java with proper rebalancing.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Terraform configuration to set up an AWS VPC with public and private subnets.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a Python ETL script that extracts data from a database, transforms it, and loads it into a data warehouse.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a dynamic programming solution for the knapsack problem in Python.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a custom memory allocator in C.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python script that generates a PDF report with charts and tables.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a state machine in TypeScript for managing order processing workflows.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive unit test suite for a user authentication module.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a consistent hashing algorithm for distributed cache routing.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python script that parses and analyzes Git commit history.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a neural network from scratch in NumPy for digit recognition.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Makefile for a multi-module C++ project with dependencies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Implement a skip list data structure in Python.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a Python script that generates synthetic test data based on a schema definition.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the integral of x^3 * sin(x) dx from 0 to pi.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is 17 factorial?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the system of equations: 3x + 2y = 14 and 5x - y = 8.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the eigenvalue decomposition of the matrix [[4, 1], [2, 3]]?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the compound interest on $10,000 at 5.5% annually for 12 years.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the derivative of f(x) = ln(x^2 + 1) * e^(3x).",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the probability of rolling at least two sixes with five dice?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the differential equation dy/dx = 3y + 2x.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the determinant of a 4x4 matrix with elements [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]].",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the sum of the first 100 prime numbers?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the Taylor series expansion of cos(x) around x = pi/4 up to the 5th term.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the volume of a torus with major radius 5 and minor radius 2.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the Fourier transform of a rectangular pulse?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the recurrence relation T(n) = 2T(n/2) + n with T(1) = 1.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the standard deviation of the dataset: 12, 15, 18, 22, 25, 28, 30, 33, 35.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the Laplace transform of t^2 * e^(-3t)?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the roots of the polynomial x^4 - 6x^3 + 11x^2 - 6x = 0.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the cross product of vectors [3, -1, 4] and [2, 5, -2].",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the expected number of coin flips to get 3 heads in a row?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the optimization problem: minimize x^2 + y^2 subject to x + y = 10.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the arc length of y = x^(3/2) from x = 0 to x = 4.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the modular exponentiation of 7^256 mod 13?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the convolution of f(t) = e^(-t) and g(t) = t for t >= 0.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the surface area of the solid of revolution of y = sqrt(x) from x = 0 to x = 9 about the x-axis.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the number of ways to partition the integer 20?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the matrix equation AX = B where A = [[2,1],[5,3]] and B = [[4],[7]].",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the information entropy of a source with probabilities [0.4, 0.3, 0.2, 0.1].",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the greatest common divisor of 1071 and 462 using the Euclidean algorithm?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the inverse Laplace transform of 1/(s^2 + 4s + 13).",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the binomial coefficient C(52, 5) for a poker hand.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the series sum of 1/n^2 from n=1 to infinity?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the traveling salesman problem for 5 cities with given distances.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the z-score corresponding to the 97.5th percentile.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the Jacobian of the transformation from Cartesian to spherical coordinates?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the general solution to the second-order ODE y'' + 4y' + 4y = 0.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the Pearson correlation coefficient for two datasets.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the chromatic number of the Petersen graph?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the linear programming problem: maximize 5x + 3y subject to x + y <= 10, 2x + y <= 14, x >= 0, y >= 0.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the moment of inertia of a solid cylinder about its central axis.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the generating function for the Fibonacci sequence?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the Laurent series of 1/(z(z-1)) around z = 0.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the CRC-32 checksum for the string 'Hello World'.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the Nash equilibrium for a 2x2 game with specific payoff matrices?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the heat equation for a one-dimensional rod with given boundary conditions.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the number of spanning trees in a complete graph K5.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the Riemann zeta function value at s = 2?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Find the minimal polynomial of the algebraic number sqrt(2) + sqrt(3).",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Calculate the geodesic distance between two points on a sphere.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "What is the closed-form expression for the sum of k*x^k from k=1 to infinity?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Solve the Rubik's cube optimally from a given scramble state.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a 1000-word analysis of the causes and consequences of the 2008 financial crisis.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed comparison between microservices and monolithic architecture.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive guide to setting up a home network with VLANs.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed business plan outline for a SaaS startup.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough literature review on the effects of social media on mental health.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed tutorial on building a compiler from scratch.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive analysis of renewable energy adoption trends globally.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed white paper on zero-trust security architecture.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough explanation of how blockchain consensus mechanisms work.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to database normalization from 1NF to 5NF.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive comparison of containerization technologies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed risk assessment framework for a manufacturing company.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough analysis of supply chain disruption strategies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to implementing CI/CD pipelines in enterprise environments.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive overview of quantum computing principles and applications.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed technical specification for a real-time messaging system.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough comparison of different machine learning frameworks.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to Kubernetes cluster management best practices.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive analysis of GDPR compliance requirements for tech companies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed tutorial on building a distributed system from scratch.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough explanation of how modern CPU cache hierarchies work.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed comparison of relational and NoSQL databases for different use cases.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive guide to API design patterns and best practices.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed analysis of the evolution of programming paradigms.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough overview of network security protocols and their vulnerabilities.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to performance optimization for web applications.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive explanation of different sorting algorithms with time complexity analysis.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed technical document on microcontroller programming for IoT devices.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough analysis of cloud migration strategies for legacy applications.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to data pipeline architecture for real-time analytics.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive comparison of different authentication and authorization protocols.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed tutorial on reverse engineering binary executables.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough explanation of how GPUs accelerate parallel computation.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to effective incident management and post-mortem processes.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive analysis of edge computing use cases and challenges.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed technical specification for a high-availability payment processing system.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough comparison of event-driven and request-response architectures.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to implementing observability in distributed systems.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive overview of modern cryptographic algorithms and their applications.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed analysis of technical debt management strategies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough explanation of how operating system schedulers work.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to designing fault-tolerant distributed databases.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive comparison of different message queuing systems.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed tutorial on building a search engine from scratch.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough analysis of DevSecOps practices and toolchains.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to memory management in systems programming.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comprehensive explanation of consensus algorithms in distributed systems.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed technical specification for a multi-tenant SaaS platform.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thorough comparison of serverless architectures across cloud providers.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a detailed guide to designing scalable real-time data streaming pipelines.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "If a train leaves Chicago at 2 PM going 60 mph and another leaves New York at 3 PM going 80 mph, when and where do they meet?",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the time complexity of quicksort in the best, average, and worst cases with proofs.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare and contrast the economic policies of Keynesianism and monetarism with real-world examples.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain the CAP theorem and walk through how different databases make trade-offs.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a database schema for a university enrollment system with at least 8 tables and explain the relationships.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk me through how to debug a memory leak in a Node.js application step by step.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how a CPU executes a single instruction from fetch to writeback.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the pros and cons of five different approaches to state management in React.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the architectural decisions behind TCP and UDP and when each should be used.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through the process of designing a load balancer from scratch.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how garbage collection works in Java, including the different collector types.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the trade-offs between different indexing strategies in PostgreSQL.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a recommendation engine architecture and explain each component.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how HTTPS/TLS handshake works step by step.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the security implications of different session management strategies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how the Linux kernel handles process scheduling with multiple queues.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the performance characteristics of B-trees versus hash indexes.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a fault-tolerant distributed logging system and explain failure modes.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how DNS resolution works from browser to authoritative server.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare different approaches to handling distributed transactions.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how virtual memory works from page tables to TLB.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the trade-offs in choosing between synchronous and asynchronous communication.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a rate limiting system that works across multiple server instances.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how a compiler optimizes code from AST to machine instructions.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the consistency models of DynamoDB, Cassandra, and CockroachDB.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how browser rendering engines parse HTML, build the DOM, and paint pixels.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the security vulnerabilities in a typical three-tier web application.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a data pipeline that handles both batch and stream processing.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how Raft consensus algorithm handles leader election and log replication.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the approaches to schema evolution in Protocol Buffers, Avro, and Thrift.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how TCP congestion control algorithms prevent network collapse.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the trade-offs between different caching strategies for a global e-commerce site.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a monitoring and alerting system for a microservices architecture.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how a database query optimizer generates an execution plan.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the failure modes and recovery mechanisms of different RAID levels.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how Kubernetes handles pod scheduling, scaling, and self-healing.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the implications of different data partitioning strategies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a search system that handles typo correction, ranking, and faceted filtering.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how an HTTP request travels from the browser through a CDN to an origin server.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the approaches to handling schema migrations in production databases.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain the internals of how Git stores and manages version history.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the trade-offs between different API versioning strategies.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design a notification system that supports email, SMS, push, and in-app channels.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through the process of performing a root cause analysis on a production outage.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare different approaches to implementing multi-tenancy in a SaaS application.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Explain how modern garbage collectors implement concurrent mark-and-sweep.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Analyze the security architecture of a zero-knowledge proof system.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Design an event sourcing and CQRS architecture for a financial trading platform.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Walk through how WebRTC establishes a peer-to-peer connection through NAT.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compare the approaches to implementing exactly-once delivery in message queues.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a short science fiction story about a city powered entirely by dreams.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed character sheet for a fantasy RPG wizard with backstory, stats, and abilities.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a satirical news article about robots demanding coffee breaks.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a dialogue between Socrates and a modern AI researcher about consciousness.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a mystery story opening where the detective is a retired librarian.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed worldbuilding document for a steampunk universe.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a humorous instruction manual for dealing with a difficult boss.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a series of journal entries from the perspective of a Mars colonist.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a philosophical argument for why time travel would be ethically problematic.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed outline for a documentary about the history of cryptography.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comedic screenplay scene about a job interview at a company run by cats.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a motivational speech for a team of engineers launching a satellite.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a noir detective monologue set in a cyberpunk city.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed game design document for a puzzle platformer.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a persuasive essay arguing that cities should ban cars in downtown areas.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a fairy tale that teaches children about environmental conservation.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a technical blog post explaining microservices to a non-technical audience.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed marketing copy for a fictional smart home device.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a dramatic monologue from the perspective of the last tree on Earth.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a series of tweets announcing a fictional product launch.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write an alternate history scenario where the Roman Empire never fell.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed lesson plan for teaching recursion to beginners.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a horror story set in an automated factory that starts thinking for itself.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a letter of recommendation for a fictional robot applying to college.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a detailed analysis of symbolism in a hypothetical painting.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a fake Wikipedia-style article about a fictional historical event.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a comedic review of a restaurant run by an AI chef.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a ballad about a programmer debugging at 3 AM.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a diplomatic speech addressing first contact with aliens.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed recipe and backstory for a fictional cultural dish.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a thriller story opening about a cybersecurity analyst discovering a backdoor.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a philosophical dialogue about whether mathematics is discovered or invented.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a nature documentary script about life in a server room.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed board game design with rules, mechanics, and theme.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a sarcastic self-help guide for surviving open-plan offices.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose an acceptance speech for winning a fictional award for worst software bug.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a heartfelt letter from a retiring engineer to their replacement.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed escape room puzzle design with clues and solutions.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a news report from the year 2150 about rediscovering social media.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a courtroom drama scene where an AI is on trial for making a bad recommendation.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a survival guide for your first week at a startup.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed analysis of fictional economic systems in video games.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a parody of a corporate all-hands meeting agenda.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a love letter written in the style of a software patch note.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a bedtime story about a cloud that was afraid of heights.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a fictional interview with the inventor of teleportation.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a sports commentary for a chess match between two AIs.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Compose a travel blog post about visiting a city that exists only in dreams.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Write a philosophical essay on the nature of artificial consciousness.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Create a detailed pitch deck narrative for a time-travel tourism startup.",
+        "expected_category": "complex"
+    },
+    {
+        "query": "Hello, how are you today?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's up?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good morning!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Thanks for your help earlier.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey there!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good afternoon.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi, how's it going?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hello!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good evening!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Howdy!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Greetings!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi there, nice to meet you.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good day!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Yo!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hiya!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's happening?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How are things?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How's your day going?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, good to see you.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Morning!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Evening!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Afternoon!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi, what's new?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hello, how do you do?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, how's everything?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Sup?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, long time no talk.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi again!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good to be back!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hello, I'm back.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, remember me?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi, just checking in.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hello, hope you're well.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, hope your day is going well.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good morning, how's it going?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good afternoon, how are you?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good evening, how's everything?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi, just wanted to say hello.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, what's going on?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hello, anything new?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hi, how have you been?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey, how's life?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Good to talk to you again.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hello there, friend!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hey hey!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Hola!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Bonjour!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Ciao!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Thanks!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Thank you so much!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "You're the best.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "That was helpful, thanks.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Awesome, appreciate it.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Great, thanks for that.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Perfect, that's exactly what I needed.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Cool, got it.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Nice, thanks!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Wonderful, thank you.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Okay, sounds good.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Alright, thanks for explaining.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Got it, makes sense.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Sure, I understand.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "That's clear, thank you.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "No worries, I figured it out.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Never mind, I found the answer.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "All good, thanks anyway.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Bye!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Goodbye, have a nice day.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "See you later!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Talk to you soon.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Catch you later.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Have a great weekend!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Take care!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Until next time!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Signing off, thanks!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Gotta go, bye!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "I'm heading out, see you.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "That's all for now, thanks.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Nothing else, have a good one!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "I think we're done, thanks!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "That wraps it up, appreciate your help.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Okay, I'll let you go.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "That's everything, cheers!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "All done, thanks a lot!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "I'm good for now, thank you.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "That answers my question, thanks!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Perfect, nothing else needed.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "You've been very helpful, goodbye!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "I appreciate your time, bye!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Thanks for everything, see you!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Great chat, talk soon!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Wonderful, I'll be back if I have more questions.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Okay, signing off. Thanks!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Have a good night!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Enjoy your evening!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Happy holidays!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Have a nice day!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Stay well!",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What color is the sky?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many days are in a week?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the capital of France?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many continents are there?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 2 plus 2?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Who wrote Romeo and Juliet?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What planet is closest to the sun?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many letters are in the English alphabet?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the boiling point of water in Celsius?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What animal is known as man's best friend?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many sides does a triangle have?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the largest ocean on Earth?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What gas do plants absorb from the air?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many hours are in a day?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the speed of light roughly in km/s?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Who painted the Mona Lisa?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the chemical symbol for gold?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many legs does a spider have?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the tallest mountain in the world?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What language is spoken in Brazil?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many bones are in the adult human body?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the freezing point of water in Fahrenheit?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the smallest prime number?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What continent is Egypt in?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is H2O?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many minutes are in an hour?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What color do you get when you mix red and blue?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Who discovered gravity?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the longest river in the world?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many strings does a standard guitar have?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the hardest natural substance?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the national language of Japan?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many zeros are in a million?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What shape is a stop sign?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the main ingredient in bread?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Who invented the telephone?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the largest mammal?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many weeks are in a year?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does CPU stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the currency of the United Kingdom?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many players are on a soccer team?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the opposite of hot?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the square root of 9?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What organ pumps blood through the body?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many vowels are in the English alphabet?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the nearest star to Earth?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does HTML stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many months have 31 days?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the chemical formula for table salt?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the largest continent?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your favorite color?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you like pizza?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What do you think about the weather?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you tell me a joke?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you have any hobbies?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's the meaning of life?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Are you a morning person or a night owl?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your name?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How old are you?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you dream?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What music do you like?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you prefer cats or dogs?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your favorite food?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you sing?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you get tired?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What do you do for fun?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Are you happy?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your opinion on pineapple on pizza?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you believe in aliens?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's the best movie ever made?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you dance?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you sleep?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What was the last book you read?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Are you smarter than a human?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you have feelings?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What would you do if you were human for a day?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's the funniest thing you've heard?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you get bored?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your favorite season?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you keep a secret?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you like your job?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's the most interesting question you've been asked?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Are you creative?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you have a sense of humor?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What would you name a pet goldfish?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "If you could travel anywhere, where would you go?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's the best thing about being an AI?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you get lonely?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your favorite number?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you whistle?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What superpower would you want?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you like rainy days?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's the weirdest question you've been asked?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Are you an optimist or a pessimist?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What would you eat for your last meal?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you have a best friend?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's your favorite word?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you tell me something surprising?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Do you prefer sunrise or sunset?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What makes you happy?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What time is it?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What day of the week is it?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What's today's date?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Can you set a reminder for me?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Tell me a fun fact.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Give me a random number between 1 and 100.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 10 times 15?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How do you spell 'accommodation'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the abbreviation for 'et cetera'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Translate 'hello' to Spanish.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 20% of 350?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Convert 5 miles to kilometers.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many cups are in a gallon?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 100 divided by 7?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Translate 'thank you' to French.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How do you pronounce 'quinoa'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'RSVP' stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Convert 72 degrees Fahrenheit to Celsius.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many teaspoons in a tablespoon?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the Roman numeral for 50?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Translate 'goodbye' to German.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many inches are in a foot?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 15% tip on a $45 bill?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Convert 10 kilograms to pounds.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'ASAP' stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many ounces in a pound?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 3 cubed?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Spell the number 1,247.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is the opposite of 'benevolent'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Convert 30 centimeters to inches.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How do you say 'please' in Italian?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is a synonym for 'happy'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'FAQ' stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many milliliters in a liter?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is an antonym for 'increase'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Convert 200 grams to ounces.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'ETA' stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many feet in a mile?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is 7 squared?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Translate 'yes' to Japanese.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'DIY' mean?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many pints in a quart?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is half of 137?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Convert 1 mile to meters.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'BYOB' stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How many grams in a kilogram?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What is a synonym for 'difficult'?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "Translate 'water' to Portuguese.",
+        "expected_category": "simple"
+    },
+    {
+        "query": "What does 'FYI' stand for?",
+        "expected_category": "simple"
+    },
+    {
+        "query": "How do you spell 'necessary'?",
+        "expected_category": "simple"
+    }
+]

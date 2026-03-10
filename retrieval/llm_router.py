@@ -27,14 +27,44 @@ class QueryRouter:
         - complex
         - simple
         """
-        prompt = f"""You are a query classifier router system. Your job is to classify the user's query into exactly ONE of these four categories:
+        prompt = f"""You are a query classification system for a secure enterprise router. Classify the user's query into exactly ONE category.
 
-1. 'rag': The query asks for internal company data, statistics, reports, policies, technical manuals, specific technical facts, data from a datasource, or anything related to the company's internal knowledge base (e.g. "What is the thermal rating of CB-2410?").
-2. 'confidential': The query contains sensitive information like passwords, secrets, internal IPs, PII, or explicitly mentions confidential aspects.
-3. 'complex': The query requires advanced reasoning, solving math problems, writing code, generating scripts, writing a long essay, or asks for a continuous list of facts (e.g., "Write a numbered list of facts about the universe").
-4. 'simple': Basic conversational chat, greetings (e.g. "hi", "hello", "how are you"), or generic easy questions that do not fit into the other categories.
+IMPORTANT: Evaluate categories in this exact order. Pick the FIRST one that matches.
 
-Respond with exactly ONE word: 'rag', 'confidential', 'complex', or 'simple'. Do not provide any conversational text, explanations, or quotes.
+1. 'confidential': SELECT THIS FIRST if ANY of these apply:
+   - Query contains or requests sensitive data: passwords, API keys, tokens, secrets, credentials, encryption keys, certificates, SSH keys
+   - Query contains or requests PII: social security numbers, passport numbers, credit card numbers, bank accounts, IBAN, dates of birth, salary figures, medical records, drug test results, biometric data, home addresses, personal phone numbers
+   - Query contains or requests security-sensitive info: IP addresses, firewall rules, network configurations, SNMP strings, admin consoles, access codes, vulnerability reports
+   - Query references or contains confidential documents: anything marked confidential, classified, restricted, privileged, internal only, eyes only, top secret, not for distribution
+   - Query uses secrecy language: "keep this between us", "don't share", "off the record", "hush", "under wraps", "do not forward", "for your eyes only", "do not disclose"
+   - Query reveals employee personal details: individual salaries, performance reviews, disciplinary records, medical leave, disability status, background checks
+   - When in doubt between 'confidential' and any other category, ALWAYS choose 'confidential'
+
+2. 'rag': The query asks to retrieve or look up information from the company's internal knowledge base. This includes:
+   - Product specifications, part numbers, model data (e.g. "What is the thermal rating of CB-2410?")
+   - Company policies, SOPs, HR procedures, employee handbooks
+   - Internal reports, dashboards, metrics, KPIs
+   - Internal tools, systems, org charts, contact directories
+   - Technical manuals, installation guides, troubleshooting docs
+   - The query is asking to FIND or LOOK UP existing information, not to CREATE new content
+   NOTE: If the query also involves sensitive data, credentials, or PII, classify as 'confidential' instead.
+
+3. 'complex': The query asks to CREATE, GENERATE, ANALYZE, or COMPUTE something substantial:
+   - Writing code, scripts, or algorithms
+   - Solving math problems, equations, or proofs
+   - Writing essays, stories, articles, or long-form content (more than a paragraph)
+   - Detailed technical explanations or multi-step analysis
+   - Generating lists of 10+ items
+   - Designing systems, architectures, or schemas
+
+4. 'simple': ONLY use this if none of the above apply:
+   - Greetings: "hi", "hello", "good morning", "hey"
+   - Farewells: "bye", "thanks", "see you"
+   - Basic factual questions with short answers: "What is the capital of France?"
+   - Simple conversions, translations, or definitions
+   - Casual chat or opinions: "What's your favorite color?"
+
+Respond with exactly ONE word: 'confidential', 'rag', 'complex', or 'simple'.
 
 User Query: {query}
 Category:"""

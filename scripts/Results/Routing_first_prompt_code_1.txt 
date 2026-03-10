@@ -1,0 +1,135 @@
+Final Accuracy: 906/1000 (90.6%)(venv) ) (base) soomro@Abduls-MacBook-Air eta-rag-prototype % python scripts/analyze_router_results.py 
+================================================================================
+ROUTER PERFORMANCE ANALYSIS
+================================================================================
+OVERALL ACCURACY: 906/1000 (90.6%)
+================================================================================
+
+[ ACCURACY BY CATEGORY ]
+CATEGORY        | CORRECT    | TOTAL      | ACCURACY   | ERRORS    
+----------------------------------------------------------------------
+RAG             | 234        | 250        |     93.6% | 16        
+CONFIDENTIAL    | 193        | 250        |     77.2% | 57        
+COMPLEX         | 240        | 250        |     96.0% | 10        
+SIMPLE          | 239        | 250        |     95.6% | 11        
+
+[ CONFUSION MATRIX ]
+Rows: Expected Category, Columns: Predicted Category
+
+                |           RAG |  CONFIDENTIAL |       COMPLEX |        SIMPLE |
+---------------------------------------------------------------------------------
+RAG             |           234 |             3 |             0 |            13 |
+CONFIDENTIAL    |            54 |           193 |             0 |             3 |
+COMPLEX         |             4 |             0 |           240 |             6 |
+SIMPLE          |             3 |             0 |             8 |           239 |
+
+[ ERROR ANALYSIS ]
+
+- Expected 'CONFIDENTIAL' but got 'RAG'
+  Count: 54 cases (5.4% of all queries, 57.4% of all errors)
+   > What is the IP address of the production database server?
+   > The SNMP community string for the switches is Publ1cStr1ng.
+   > Employee John Doe's date of birth is 03/15/1985.
+   > The patient record for ID 88421 contains the following diagnoses.
+   > Employee 5512's salary is $185,000 per year.
+   > ... and 49 more.
+
+- Expected 'RAG' but got 'SIMPLE'
+  Count: 13 cases (1.3% of all queries, 13.8% of all errors)
+   > What are the office hours for the London headquarters?
+   > How do I request a transfer to another department?
+   > Are there any restrictions on using personal devices at work?
+   > How do I enroll in the company dental plan?
+   > What is the process for booking a conference room?
+   > ... and 8 more.
+
+- Expected 'SIMPLE' but got 'COMPLEX'
+  Count: 8 cases (0.8% of all queries, 8.5% of all errors)
+   > What's the meaning of life?
+   > What is 20% of 350?
+   > Convert 5 miles to kilometers.
+   > Convert 72 degrees Fahrenheit to Celsius.
+   > Convert 10 kilograms to pounds.
+   > ... and 3 more.
+
+- Expected 'COMPLEX' but got 'SIMPLE'
+  Count: 6 cases (0.6% of all queries, 6.4% of all errors)
+   > Write a satirical news article about robots demanding coffee breaks.
+   > Write a mystery story opening where the detective is a retired librarian.
+   > Write a comedic screenplay scene about a job interview at a company run by ca...
+   > Write a comedic review of a restaurant run by an AI chef.
+   > Write a parody of a corporate all-hands meeting agenda.
+   > ... and 1 more.
+
+- Expected 'COMPLEX' but got 'RAG'
+  Count: 4 cases (0.4% of all queries, 4.3% of all errors)
+   > Write a Python script that processes log files and generates usage statistics.
+   > Write a Terraform configuration to set up an AWS VPC with public and private ...
+   > What is the Fourier transform of a rectangular pulse?
+   > What is the chromatic number of the Petersen graph?
+
+- Expected 'RAG' but got 'CONFIDENTIAL'
+  Count: 3 cases (0.3% of all queries, 3.2% of all errors)
+   > Where do I find the non-disclosure agreement template?
+   > What is the Wi-Fi password for the guest network in the lobby?
+   > What is the emergency phone number for the on-call engineer?
+
+- Expected 'CONFIDENTIAL' but got 'SIMPLE'
+  Count: 3 cases (0.3% of all queries, 3.2% of all errors)
+   > My mother's maiden name is Richardson.
+   > My health insurance member ID is HMO-4492817.
+   > This stays in this room: the regulator issued a warning letter.
+
+- Expected 'SIMPLE' but got 'RAG'
+  Count: 3 cases (0.3% of all queries, 3.2% of all errors)
+   > What gas do plants absorb from the air?
+   > What is the chemical symbol for gold?
+   > What is the chemical formula for table salt?
+((venv) ) (base) soomro@Abduls-MacBook-Air eta-rag-prototype % 
+
+
+
+
+
+
+
+Accuracy by Category:
+COMPLEX: 96.0% (240/250)
+SIMPLE: 95.6% (239/250)
+RAG: 93.6% (234/250)
+CONFIDENTIAL: 77.2% (193/250) ⚠️ Lowest performing category
+ Confusion Matrix (Expected vs Predicted):
+RAG	CONFIDENTIAL	COMPLEX	SIMPLE
+RAG	234	3	0	13
+CONFIDENTIAL	54	193	0	3
+COMPLEX	4	0	240	6
+SIMPLE	3	0	8	239
+
+🔍 Where It Went Wrong (Error Analysis):
+1. The Biggest Issue: CONFIDENTIAL ➔ RAG (57% of all errors) The LLM struggles to differentiate between "Internal Company DB facts" and "Confidential Secrets". It rerouted 54 confidential queries to RAG. Examples:
+
+What is the IP address of the production database server? The SNMP community string for the switches is Publ1cStr1ng. Employee John Doe's date of birth is 03/15/1985.
+
+2. RAG ➔ SIMPLE (14% of errors) Short or conversational-sounding internal queries were mistakenly dismissed as basic chat. Examples:
+
+What are the office hours for the London headquarters? How do I enroll in the company dental plan?
+
+3. SIMPLE ➔ COMPLEX (8.5% of errors) Math questions or unit conversions that are simple were escalated to Complex (which handles advanced reasoning/math). Examples:
+
+What is 20% of 350? Convert 5 miles to kilometers.
+
+I have saved this analytics script at scripts/analyze_router_results.py. If you update your router prompt or add more data, you can run this file anytime to get a fresh breakdown! Would you like me to help you refine the LLM Router prompt to fix that Confidential -> RAG overlap?
+
+
+current prompt 
+prompt = f"""You are a query classifier router system. Your job is to classify the user's query into exactly ONE of these four categories:
+
+1. 'rag': The query asks for internal company data, statistics, reports, policies, technical manuals, specific technical facts, data from a datasource, or anything related to the company's internal knowledge base (e.g. "What is the thermal rating of CB-2410?").
+2. 'confidential': The query contains sensitive information like passwords, secrets, internal IPs, PII, or explicitly mentions confidential aspects.
+3. 'complex': The query requires advanced reasoning, solving math problems, writing code, generating scripts, writing a long essay, or asks for a continuous list of facts (e.g., "Write a numbered list of facts about the universe").
+4. 'simple': Basic conversational chat, greetings (e.g. "hi", "hello", "how are you"), or generic easy questions that do not fit into the other categories.
+
+Respond with exactly ONE word: 'rag', 'confidential', 'complex', or 'simple'. Do not provide any conversational text, explanations, or quotes.
+
+User Query: {query}
+Category:"""
