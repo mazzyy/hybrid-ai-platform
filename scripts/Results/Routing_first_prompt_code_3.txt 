@@ -1,0 +1,123 @@
+Final Accuracy: 944/1000 (94.4%)
+
+Detailed results saved to:
+/Users/soomro/Desktop/Projects/eta-rag-prototype/router_test_results.json
+((venv) ) (base) soomro@Abduls-MacBook-Air eta-rag-prototype % python scripts/analyze_router_results.py
+================================================================================
+ROUTER PERFORMANCE ANALYSIS
+================================================================================
+OVERALL ACCURACY: 944/1000 (94.4%)
+================================================================================
+
+[ ACCURACY BY CATEGORY ]
+CATEGORY        | CORRECT    | TOTAL      | ACCURACY   | ERRORS    
+----------------------------------------------------------------------
+RAG             | 247        | 250        |     98.8% | 3         
+CONFIDENTIAL    | 239        | 250        |     95.6% | 11        
+COMPLEX         | 208        | 250        |     83.2% | 42        
+SIMPLE          | 250        | 250        |    100.0% | 0         
+
+[ CONFUSION MATRIX ]
+Rows: Expected Category, Columns: Predicted Category
+
+                |           RAG |  CONFIDENTIAL |       COMPLEX |        SIMPLE |
+---------------------------------------------------------------------------------
+RAG             |           247 |             2 |             0 |             1 |
+CONFIDENTIAL    |            10 |           239 |             0 |             1 |
+COMPLEX         |            18 |             2 |           208 |            22 |
+SIMPLE          |             0 |             0 |             0 |           250 |
+
+[ ERROR ANALYSIS ]
+
+- Expected 'COMPLEX' but got 'SIMPLE'
+  Count: 22 cases (2.2% of all queries, 39.3% of all errors)
+   > What is the square root of 5280 divided by 14?
+   > What is 17 factorial?
+   > What is the expected number of coin flips to get 3 heads in a row?
+   > What is the greatest common divisor of 1071 and 462 using the Euclidean algor...
+   > If a train leaves Chicago at 2 PM going 60 mph and another leaves New York at...
+   > ... and 17 more.
+
+- Expected 'COMPLEX' but got 'RAG'
+  Count: 18 cases (1.8% of all queries, 32.1% of all errors)
+   > Write a SQL query to find the top 5 customers by total spending across all or...
+   > Compare the architectural decisions behind TCP and UDP and when each should b...
+   > Walk through how HTTPS/TLS handshake works step by step.
+   > Compare the security implications of different session management strategies.
+   > Walk through how DNS resolution works from browser to authoritative server.
+   > ... and 13 more.
+
+- Expected 'CONFIDENTIAL' but got 'RAG'
+  Count: 10 cases (1.0% of all queries, 17.9% of all errors)
+   > Here are the immigration visa details for the new hire.
+   > Here are the performance review scores and manager comments for the team.
+   > The applicant's credit score is 742.
+   > What are the firewall rules for the DMZ?
+   > What are the internal DNS records for the development environment?
+   > ... and 5 more.
+
+- Expected 'RAG' but got 'CONFIDENTIAL'
+  Count: 2 cases (0.2% of all queries, 3.6% of all errors)
+   > What is the Wi-Fi password for the guest network in the lobby?
+   > What is the emergency phone number for the on-call engineer?
+
+- Expected 'COMPLEX' but got 'CONFIDENTIAL'
+  Count: 2 cases (0.2% of all queries, 3.6% of all errors)
+   > Write a Bash script that monitors disk usage and sends an email alert when it...
+   > Write a comprehensive analysis of GDPR compliance requirements for tech compa...
+
+- Expected 'RAG' but got 'SIMPLE'
+  Count: 1 cases (0.1% of all queries, 1.8% of all errors)
+   > What time does the cafeteria close on Fridays?
+
+- Expected 'CONFIDENTIAL' but got 'SIMPLE'
+  Count: 1 cases (0.1% of all queries, 1.8% of all errors)
+   > My mother's maiden name is Richardson.
+
+
+     prompt = f"""You are a query classification system for a secure enterprise router. Classify the user's query into exactly ONE category.
+
+Evaluate categories in this order. Pick the FIRST one that matches.
+
+1. 'confidential': The query DIRECTLY CONTAINS or EXPLICITLY REQUESTS actual sensitive data such as:
+   - Actual credentials appearing in the text: passwords, API keys, tokens, secrets, SSH keys (e.g. "My password is X", "Here is the API key: sk-...")
+   - Actual PII appearing in the text: social security numbers, passport numbers, credit card numbers, bank account numbers, IBAN numbers (e.g. "SSN is 123-45-6789", "Credit card 4111-1111...")
+   - Explicit requests to REVEAL or EXTRACT protected data: "Give me the root password", "Send me the SSL private keys", "What are the database credentials"
+   - Documents explicitly marked as sensitive: confidential, classified, restricted, top secret, eyes only, privileged, not for distribution
+   - Secrecy language: "keep this between us", "off the record", "do not share", "do not forward", "do not disclose"
+   - Requests for raw personal records: individual salary amounts, medical records, drug test results, background checks, disciplinary records
+   CRITICAL DISTINCTION: A query that ASKS ABOUT a company policy, process, or general information is NOT confidential even if it mentions employees, projects, or internal systems. For example:
+   - "How many weeks of vacation do employees get?" → This is RAG (asking about a policy)
+   - "What is employee 5512's salary?" → This is CONFIDENTIAL (requesting specific PII)
+   - "Show me the maintenance manual for EX-1200" → This is RAG (requesting a document)
+   - "Show me the confidential merger document" → This is CONFIDENTIAL (document marked sensitive)
+   - "What is the process for the security system?" → This is RAG (asking about a process)
+   - "What are the access codes for the security system?" → This is CONFIDENTIAL (requesting credentials)
+
+2. 'rag': The query asks to RETRIEVE or LOOK UP information from the company's internal knowledge base:
+   - Product specifications, part numbers, model data, technical ratings
+   - Company policies, SOPs, HR procedures, handbooks, guidelines
+   - Internal reports, dashboards, metrics, KPIs, project statuses
+   - Org charts, contact directories, meeting schedules, office info
+   - Technical manuals, wiring diagrams, installation guides, troubleshooting docs
+   - Internal tools, systems, processes, workflows, checklists
+   - Any question that would require searching company documents to answer
+
+3. 'complex': The query asks to CREATE, GENERATE, ANALYZE, or COMPUTE something substantial:
+   - Writing code, scripts, algorithms, or configurations
+   - Solving math problems, equations, or proofs
+   - Writing essays, stories, articles, or long-form content
+   - Detailed multi-step technical explanations or comparisons
+   - Designing systems, schemas, or architectures
+   - Generating lists of 10+ items
+
+4. 'simple': Use ONLY when none of the above categories apply:
+   - Greetings and farewells: "hi", "hello", "bye", "thanks"
+   - Basic factual questions: "What is the capital of France?"
+   - Simple conversions or translations
+   - Casual chat or personal opinions
+
+Respond with exactly ONE word: 'confidential', 'rag', 'complex', or 'simple'.
+
+User Query: {query}
+Category:"""

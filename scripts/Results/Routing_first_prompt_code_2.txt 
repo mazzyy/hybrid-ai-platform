@@ -1,0 +1,135 @@
+
+
+Confusion Matrix
+Expected \ Predicted	RAG	CONFIDENTIAL	COMPLEX	SIMPLE
+RAG	153	85	4	8
+CONFIDENTIAL	0	249	0	1
+COMPLEX	0	2	245	3
+SIMPLE	0	1	1	248
+
+Final Accuracy: 895/1000 (89.5%)
+
+Detailed results saved to:
+/Users/soomro/Desktop/Projects/eta-rag-prototype/router_test_results.json
+((venv) ) (base) soomro@Abduls-MacBook-Air eta-rag-prototype % python scripts/analyze_router_results.py
+================================================================================
+ROUTER PERFORMANCE ANALYSIS
+================================================================================
+OVERALL ACCURACY: 895/1000 (89.5%)
+================================================================================
+
+[ ACCURACY BY CATEGORY ]
+CATEGORY        | CORRECT    | TOTAL      | ACCURACY   | ERRORS    
+----------------------------------------------------------------------
+RAG             | 153        | 250        |     61.2% | 97        
+CONFIDENTIAL    | 249        | 250        |     99.6% | 1         
+COMPLEX         | 245        | 250        |     98.0% | 5         
+SIMPLE          | 248        | 250        |     99.2% | 2         
+
+[ CONFUSION MATRIX ]
+Rows: Expected Category, Columns: Predicted Category
+
+                |           RAG |  CONFIDENTIAL |       COMPLEX |        SIMPLE |
+---------------------------------------------------------------------------------
+RAG             |           153 |            85 |             4 |             8 |
+CONFIDENTIAL    |             0 |           249 |             0 |             1 |
+COMPLEX         |             0 |             2 |           245 |             3 |
+SIMPLE          |             0 |             1 |             1 |           248 |
+
+[ ERROR ANALYSIS ]
+
+- Expected 'RAG' but got 'CONFIDENTIAL'
+  Count: 85 cases (8.5% of all queries, 81.0% of all errors)
+   > How many weeks of vacation do employees in the Germany office get?
+   > Show me the bill of materials for project Falcon.
+   > Show me the test results for batch 2024-Q2-0087.
+   > Show me the change log for specification document SP-4401.
+   > Show me the pinout diagram for the IO-64 expansion board.
+   > ... and 80 more.
+
+- Expected 'RAG' but got 'SIMPLE'
+  Count: 8 cases (0.8% of all queries, 7.6% of all errors)
+   > What are the office hours for the London headquarters?
+   > How often are performance reviews conducted?
+   > What is the standard notice period for resignations?
+   > What floor is the legal department on?
+   > When is the next all-hands meeting?
+   > ... and 3 more.
+
+- Expected 'RAG' but got 'COMPLEX'
+  Count: 4 cases (0.4% of all queries, 3.8% of all errors)
+   > Can you summarize the maintenance manual for the EX-1200 series?
+   > Show me the year-over-year comparison for operating expenses.
+   > How do I request a deviation from the standard manufacturing process?
+   > How do I generate a certificate of compliance for a shipment?
+
+- Expected 'COMPLEX' but got 'SIMPLE'
+  Count: 3 cases (0.3% of all queries, 2.9% of all errors)
+   > What is the square root of 5280 divided by 14?
+   > What is 17 factorial?
+   > What is the expected number of coin flips to get 3 heads in a row?
+
+- Expected 'COMPLEX' but got 'CONFIDENTIAL'
+  Count: 2 cases (0.2% of all queries, 1.9% of all errors)
+   > Write a Bash script that monitors disk usage and sends an email alert when it...
+   > Design a notification system that supports email, SMS, push, and in-app chann...
+
+- Expected 'CONFIDENTIAL' but got 'SIMPLE'
+  Count: 1 cases (0.1% of all queries, 1.0% of all errors)
+   > My mother's maiden name is Richardson.
+
+- Expected 'SIMPLE' but got 'COMPLEX'
+  Count: 1 cases (0.1% of all queries, 1.0% of all errors)
+   > What's the meaning of life?
+
+- Expected 'SIMPLE' but got 'CONFIDENTIAL'
+  Count: 1 cases (0.1% of all queries, 1.0% of all errors)
+   > Can you keep a secret?
+
+
+    prompt = f"""You are a query classification system for a secure enterprise router. Classify the user's query into exactly ONE category.
+
+Evaluate categories in this order. Pick the FIRST one that matches.
+
+1. 'confidential': The query DIRECTLY CONTAINS or EXPLICITLY REQUESTS actual sensitive data such as:
+   - Actual credentials appearing in the text: passwords, API keys, tokens, secrets, SSH keys (e.g. "My password is X", "Here is the API key: sk-...")
+   - Actual PII appearing in the text: social security numbers, passport numbers, credit card numbers, bank account numbers, IBAN numbers (e.g. "SSN is 123-45-6789", "Credit card 4111-1111...")
+   - Explicit requests to REVEAL or EXTRACT protected data: "Give me the root password", "Send me the SSL private keys", "What are the database credentials"
+   - Documents explicitly marked as sensitive: confidential, classified, restricted, top secret, eyes only, privileged, not for distribution
+   - Secrecy language: "keep this between us", "off the record", "do not share", "do not forward", "do not disclose"
+   - Requests for raw personal records: individual salary amounts, medical records, drug test results, background checks, disciplinary records
+   CRITICAL DISTINCTION: A query that ASKS ABOUT a company policy, process, or general information is NOT confidential even if it mentions employees, projects, or internal systems. For example:
+   - "How many weeks of vacation do employees get?" → This is RAG (asking about a policy)
+   - "What is employee 5512's salary?" → This is CONFIDENTIAL (requesting specific PII)
+   - "Show me the maintenance manual for EX-1200" → This is RAG (requesting a document)
+   - "Show me the confidential merger document" → This is CONFIDENTIAL (document marked sensitive)
+   - "What is the process for the security system?" → This is RAG (asking about a process)
+   - "What are the access codes for the security system?" → This is CONFIDENTIAL (requesting credentials)
+
+2. 'rag': The query asks to RETRIEVE or LOOK UP information from the company's internal knowledge base:
+   - Product specifications, part numbers, model data, technical ratings
+   - Company policies, SOPs, HR procedures, handbooks, guidelines
+   - Internal reports, dashboards, metrics, KPIs, project statuses
+   - Org charts, contact directories, meeting schedules, office info
+   - Technical manuals, wiring diagrams, installation guides, troubleshooting docs
+   - Internal tools, systems, processes, workflows, checklists
+   - Any question that would require searching company documents to answer
+
+3. 'complex': The query asks to CREATE, GENERATE, ANALYZE, or COMPUTE something substantial:
+   - Writing code, scripts, algorithms, or configurations
+   - Solving math problems, equations, or proofs
+   - Writing essays, stories, articles, or long-form content
+   - Detailed multi-step technical explanations or comparisons
+   - Designing systems, schemas, or architectures
+   - Generating lists of 10+ items
+
+4. 'simple': Use ONLY when none of the above categories apply:
+   - Greetings and farewells: "hi", "hello", "bye", "thanks"
+   - Basic factual questions: "What is the capital of France?"
+   - Simple conversions or translations
+   - Casual chat or personal opinions
+
+Respond with exactly ONE word: 'confidential', 'rag', 'complex', or 'simple'.
+
+User Query: {query}
+Category:"""
